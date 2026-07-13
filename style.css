@@ -56,9 +56,11 @@ header {
 }
 
 .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
 }
-
 .nav-ul {
     list-style: none;
     margin: 0;
@@ -79,8 +81,19 @@ header {
 }
 
 .hero {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
     padding:  100px 40px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-image{
+    flex: 1;
 }
 
 .hero h1 {
@@ -109,4 +122,57 @@ header {
 
 .hero-cta:hover {
     background-color: var(--color-button-hover);
+}
+
+.highlight {
+    text-align: center;
+    padding: 80px 40px;
+    background-color: var(--color-bg-section-light);
+}
+
+.highlight h2 {
+    color: var(--color-button);
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.highlight h3 {
+    color: var(--color-primary-dark);
+    font-size: 28px;
+    font-weight: 600;
+    max-width: 700px;
+    margin: 0 auto 600px;
+}
+
+.highlight-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px
+}
+
+.highlight-item {
+    max-width: 280px;
+}
+
+.highlight-item h4 {
+    color: var(--color-primary-dark);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.highlight-item p {
+    color: var(--color-text-body);
+    font-size: 14px;
+}
+
+.highlight-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-icon-circle-bg);
+    border-radius: 50%;
+    margin: 0 auto 16px;
 }
