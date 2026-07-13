@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,71 +8,120 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 
 <body>
     <header>
-    <nav class="nav-bar">
-         <ul class="nav-ul">
-            <li><a href="main.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="process.html">Our Process</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        <nav class="nav-bar">
+            <section class="nav-logo">
+                <!-- logo goes here -->
+            </section>
+
+            <section class="nav-text">
+                <ul class="nav-ul">
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="process.html">Our Process</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </section>
+        </nav>
     </header>
 
     <main>
-        <section class="inner-hero">
-            <h1>Contact Us</h1>
-            <p>Let's create something beautiful together.</p>
-            <p>Get in touch with us today</p>
-        </section>
+        <div class="contact-layout">
+            <div class="contact-info-column">
+                <section class="inner-hero">
+                    <h1>Contact Us</h1>
+                    <p>Let's create something beautiful together.</p>
+                    <p>Get in touch with us today</p>
+                </section>
 
-        <section class="contact">
-            <h4>Phone</h4>
-            <p>Spanish: 561-563-3039</p>
-            <p>English: 321-337-5985</p>
 
-            <h4>Email</h4>
-            <p>info@tgservicesflorida.com</p>
+                <section class="contact">
 
-            <h4>Instagram</h4>
-            <p>@tgservicesflorida</p>
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <!-- icon goes here-->
+                        </div>
 
-            <h4>Facebook</h4>
-            <p>TG Services FL</p>
-        </section>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>Spanish: 561-563-3039</p>
+                            <p>English: 321-337-5985</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <!-- icon goes here-->
+                        </div>
+
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>info@tgservicesflorida.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <!-- icon goes here-->
+                        </div>
+                        <div class="contact-text">
+                            <h4>Instagram</h4>
+                            <p>@tgservicesflorida</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <!-- icon goes here-->
+                        </div>
+                        <div class="contact-text">
+                            <h4>Facebook</h4>
+                            <p>TG Services FL</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <aside>
+                <form id="contact-form">
+                    <p>
+                        <label for="name">Name*</label>
+                        <input name="name" id="name" type="text" required placeholder="John Smith" />
+                    </p>
+
+                    <p>
+                        <label for="phone">Phone</label>
+                        <input name="phone" id="phone" type="tel" required placeholder="123-456-7890" />
+                    </p>
+
+                    <p>
+                        <label for="email">Email*</label>
+                        <input name="email" id="email" type="email" required placeholder="john@email.com" />
+                    </p>
+
+                    <p>
+                        <label for="message">Message</label>
+                        <input name="message" type="text" id="message" placeholder="Tell us about your project..." />
+                    </p>
+
+                    <p>
+                        <button>Submit</button>
+                    </p>
+                </form>
+
+                <p id="form-status"></p>
+            </aside>
+        </div>
     </main>
-    
-    <aside>
-        <form>
-            <p>
-                <label for="Name">Name (required)</label>
-                <input type="text" name="name" id="name" required />
-            </p>
 
-            <p>
-                <label for="Phone">Phone (required)</label>
-                <input type="text" phone="phone" id="phone" required />
-            </p>
-
-            <p>
-                <label for="Email">Email (required)</label>
-                <input type="text" email="email" id="email" required />
-            </p>
-
-            <p>
-                <label for="Comments">Comments</label>
-                <input type="text" comments="comments" id="comments" />
-            </p>
-            
-            <p>
-                <button>Submit</button>
-            </p>
-        </form>
-    </aside>
+    <script src="index.js"></script>
 </body>
+
 </html>

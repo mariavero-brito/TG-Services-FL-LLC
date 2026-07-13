@@ -80,6 +80,11 @@ header {
     color: var(--color-button)
 }
 
+.inner-hero {
+    padding: 60px 40px 40px;
+}
+
+/*Main Page*/
 .hero {
     display: flex;
     align-items: center;
@@ -144,7 +149,7 @@ header {
     font-size: 28px;
     font-weight: 600;
     max-width: 700px;
-    margin: 0 auto 600px;
+    margin: 0 auto 48px;
 }
 
 .highlight-grid {
@@ -175,4 +180,315 @@ header {
     background-color: var(--color-icon-circle-bg);
     border-radius: 50%;
     margin: 0 auto 16px;
+}
+
+/*Services*/
+.services {
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.service-item-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.service-item-icon {
+    width: 56px;
+    height: 56px;
+    background-color: var(--color-icon-circle-bg);
+    border-radius: 50px;
+    flex-shrink: 0;
+}
+
+.service-item-content h2 {
+    color: var(--color-primary-dark);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+.service-item-content p {
+    color: var(--color-text-body);
+    font-size: 14px;
+    max-width: 320px;
+}
+
+.service-item-image {
+    width: 200px;
+    height: 130px;
+    background-color: var(--color-bg-sage);
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+
+/*Process*/
+.process {
+    padding: 80px 40px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.process-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 280px;
+    position: relative;
+}
+
+.process-step-image {
+    width: 120px;
+    height: 120px;
+    background-color: var(--color-bg-sage);
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.process-step-number-icon {
+    width: 32px;
+    height: 32px;
+    background-color: var(--color-icon-circle-bg);
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.process-step-text h2 {
+    color: var(--color-primary-dark);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+.process-step-text p {
+    color: var(--color-text-body);
+    font-size: 14px;
+}
+
+.process-step:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 52px;
+    right: -46px;
+    width: 52px;
+    height: 28px;
+    background-color: var(--color-primary-dark);
+    -webkit-mask-image: url('images/arrow-thin-right-icon.svg');
+    mask-image: url('images/arrow-thin-right-icon.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+}
+
+/*Portfolio*/
+.gallery {
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px
+}
+
+.gallery-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.gallery-slide-previous,
+.gallery-slide-active,
+.gallery-slide-next {
+    background-color: var(--color-bg-sage);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.gallery-slide-previous,
+.gallery-slide-next {
+    width: 160px;
+    height: 200px;
+    opacity: 0.6;
+}
+
+.gallery-slide-active{
+    width: 320px;
+    height: 380px;
+}
+
+.gallery-buttons {
+    display: flex;
+    gap: 24px;
+    font-weight: 600;
+}
+
+.left-gallery-button,
+.right-gallery-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 35%;
+    border: none;
+    background-color: var(--color-button);
+    color: var(--color-bg-card);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.left-gallery-button:hover,
+.right-gallery-button:hover {
+    background-color: var(--color-button-hover);
+}
+
+/*Contact*/
+.contact-layout {
+    display: flex;
+    gap: 60px;
+    padding: 60px 40px 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.contact-info-column .inner-hero {
+    padding: 0 0 24px 0;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact-method {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-icon-circle-bg);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.contact-text h4 {
+    color: var(--color-primary-dark);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 4px;
+}
+
+.contact-text p {
+    color: var(--color-text-body);
+    font-size: 14px;
+    margin: 0;
+}
+
+aside {
+    flex: 1;
+    margin-top: 85px;
+    background-color: var(--color-bg-card);
+    border: 1px solid var(--color-border);
+    border-radius: 15%;
+    padding: 32px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form p {
+    display: flex;
+    flex-direction:  column;
+    gap: 8px;
+    color: var(--color-text-main);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+form p:last-child {
+    align-items: center;
+}
+
+form input {
+    width: 100%;
+    background-color: var(--color-bg-input);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-size: 14px;
+    font-family: inherit;
+    color: var(--color-text-main);
+}
+
+form input:focus {
+    outline: none;
+    border-color: var(--color-border-input-focus);
+}
+
+form button {
+    background-color: var(--color-button);
+    color: var(--color-bg-card);
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+    border-radius: 28px;
+    padding: 14px 32px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--color-button-hover);
+    font-weight: 600;
+}
+
+#form-status {
+    display: none;
+    margin-top: 16px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#form-status.visible {
+    display: block;
+}
+
+#form-status.success {
+    background-color: var(--color-bg-sage);
+    color: var(--color-primary-dark);
+}
+
+#form-status.error {
+    background-color: #fbeaea;
+    color: #b3261e;
 }
