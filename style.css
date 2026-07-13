@@ -1,0 +1,112 @@
+:root {
+    /* Color palette */
+    --color-primary-dark: #244D3A;
+    --color-button: #4F8565;
+    --color-button-hover: #3D6F53;
+    --color-secondary-green: #7FA387;
+    --color-illustration-green: #6F9664;
+
+    /* Backgrounds */
+    --color-bg-page: #FAFBF7;
+    --color-bg-section-light: #F3F7F1;
+    --color-bg-sage: #E7EFE5;
+    --color-bg-card: #FFFFFF;
+    --color-bg-input: #FAFCF9;
+
+    /* Text */
+    --color-text-main: #234334;
+    --color-text-body: #56645C;
+    --color-text-secondary: #7B8981;
+    --color-text-card-body: #66736B;
+    --color-text-placeholder: #A1AAA4;
+
+    /* Border & inputs */
+    --color-border: #DDE6DD;
+    --color-border-input-focus: #6C9577;
+
+    /* Nav */
+    --color-nav-link: #345443;
+
+    /* Icons */
+    --color-icon-circle-bg: #EDF3E9;
+    --color-icon-dark-detail: #315D46;
+    --color-leaf-dark: #416F4C;
+    --color-leaf-medium: #6F9664;
+    --color-leaf-light: #A6BC8C;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-bg-page);
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-text-main)
+}
+
+header {
+    background-color: var(--color-bg-page);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.nav-bar {
+    width: 100%;
+}
+
+.nav-ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 32px;
+}
+
+.nav-ul a {
+    text-decoration: none;
+    color: var(--color-nav-link);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.nav-ul a:hover {
+    color: var(--color-button)
+}
+
+.hero {
+    text-align: center;
+    padding:  100px 40px;
+}
+
+.hero h1 {
+    color: var(--color-primary-dark);
+    font-size: 56px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    color: var(--color-text-body);
+    font-size: 16px;
+    margin-bottom: 32px;
+}
+
+.hero-cta {
+    background-color: var(--color-button);
+    color: var(--color-bg-card);
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    border-radius: 28px;
+    padding: 14px 32px;
+    cursor: pointer;
+}
+
+.hero-cta:hover {
+    background-color: var(--color-button-hover);
+}
