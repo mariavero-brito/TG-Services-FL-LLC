@@ -98,7 +98,18 @@ header {
 }
 
 .hero-image{
-    flex: 1;
+    position: relative;
+    width: 60%;
+    max-width: 1000px;
+    height: auto;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.laptop-img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .hero h1 {
@@ -133,6 +144,20 @@ header {
     text-align: center;
     padding: 80px 40px;
     background-color: var(--color-bg-section-light);
+    position: relative;
+}
+
+.highlight-image {
+    position: absolute;
+    left: 0px;
+    bottom: -100px;
+    z-index: 0;
+}
+
+.plant-pot-img {
+    width: 150px;
+    height: auto;
+    display: block;
 }
 
 .highlight h2 {

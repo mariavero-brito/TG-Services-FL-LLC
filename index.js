@@ -9,14 +9,13 @@ if (heroButton) {
 
 
 // Contact Form EmailJS
-emailjs.init({
-    publicKey: "71Cwt4XhZ3JapqnNG",
-});
-
 const contactForm = document.getElementById("contact-form");
 const formStatus = document.getElementById("form-status");
 
 if (contactForm) {
+    emailjs.init({
+        publicKey: "71Cwt4XhZ3JapqnNG",
+    });
     contactForm.addEventListener("submit", function (event) {
         event.preventDefault();
 
@@ -36,3 +35,32 @@ if (contactForm) {
 }
 
 //Portfolio Carousel
+const images = [1, 2, 3, 4, 5, 6]
+let currentIndex = 1;
+
+const previousSlide = document.querySelector(".gallery-slide-previous p");
+const activeSlide = document.querySelector(".gallery-slide-active p");
+const nextSlide = document.querySelector(".gallery-slide-next p");
+const leftButton = document.querySelector(".left-gallery-button");
+const rightButton = document.querySelector(".right-gallery-button");
+
+function updateSlides() {
+    const previousIndex = (currentIndex - 1 + images.length) % images.length;
+    const nextIndex = (currentIndex + 1) % images.length;
+
+    previousSlide.textContent = images[previousIndex];
+    activeSlide.textContent = images[currentIndex];
+    nextSlide.textContent = images[nextIndex];
+}
+
+if (leftButton && rightButton) {
+    leftButton.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateSlides();
+    });
+
+    rightButton.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1 + images.length) % images.length;
+        updateSlides();
+    });
+}
