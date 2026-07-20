@@ -35,12 +35,17 @@ if (contactForm) {
 }
 
 //Portfolio Carousel
-const images = [1, 2, 3, 4, 5, 6]
+const images = ["images/images/garden-design-4.jpg", 
+    "images/images/garden-design-5.jpg", 
+    "images/images/paver-installation.jpg", 
+    "images/images/planting.jpg", 
+    "images/images/turf-installation.jpg", 
+    "images/images/turf-installation-2.jpg",];
 let currentIndex = 1;
 
-const previousSlide = document.querySelector(".gallery-slide-previous p");
-const activeSlide = document.querySelector(".gallery-slide-active p");
-const nextSlide = document.querySelector(".gallery-slide-next p");
+const previousSlide = document.querySelector(".gallery-slide-previous img");
+const activeSlide = document.querySelector(".gallery-slide-active img");
+const nextSlide = document.querySelector(".gallery-slide-next img");
 const leftButton = document.querySelector(".left-gallery-button");
 const rightButton = document.querySelector(".right-gallery-button");
 
@@ -48,9 +53,9 @@ function updateSlides() {
     const previousIndex = (currentIndex - 1 + images.length) % images.length;
     const nextIndex = (currentIndex + 1) % images.length;
 
-    previousSlide.textContent = images[previousIndex];
-    activeSlide.textContent = images[currentIndex];
-    nextSlide.textContent = images[nextIndex];
+    previousSlide.src = images[previousIndex];
+    activeSlide.src = images[currentIndex];
+    nextSlide.src = images[nextIndex];
 }
 
 if (leftButton && rightButton) {
