@@ -80,6 +80,13 @@ header {
     color: var(--color-button)
 }
 
+.nav-logo img {
+    display: flex;
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+}
+
 .inner-hero {
     padding: 60px 40px 40px;
 }
