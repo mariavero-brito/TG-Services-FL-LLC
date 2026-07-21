@@ -430,8 +430,17 @@ header {
     display: flex;
     align-items: flex-start;
     gap: 16px;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 8px;
+    padding: 4px;
+    margin: -4px;
+    transition: background-color 0.2 ease;
 }
 
+.contact-method hover {
+    background-color: var(--color-bg-sage);
+}
 .contact-icon img{
     width: 60px;
     height: 60px;
