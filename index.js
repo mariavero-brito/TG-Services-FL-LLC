@@ -69,3 +69,14 @@ if (leftButton && rightButton) {
         updateSlides();
     });
 }
+
+// Mobile Nav Toggle
+const navToggle = document.querySelector(".nav-toggle");
+const navUl = document.querySelector(".nav-ul");
+
+if (navToggle && navUl){
+    navToggle.addEventListener("click", () => {
+        const isOpen = navUl.classList.toggle("active");
+        navToggle.setAttribute("aria-expanded", isOpen);
+    });
+}
