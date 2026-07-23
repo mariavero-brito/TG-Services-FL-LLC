@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mariavero-brito.github.io/TG-Services-FL-LLC/sitemap.xml
+Sitemap: https://tgservicesfl.com/sitemap.xml
